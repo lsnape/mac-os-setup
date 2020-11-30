@@ -7,7 +7,7 @@
 if [ ! -f ~/.ssh/id_rsa ]; then
     echo "Creating SSH key ..."
     # Copy this ssh key to github.com!
-    ssh-keygen -t rsa -C "kpapst@gmx.net"
+    ssh-keygen -t rsa -C "***"
 fi
 
 echo "Setting Git configs ..."
@@ -29,8 +29,8 @@ unset user_name
 unset user_email
 
 # Set git config values
-git config --global user.name "Kevin Papst"
-git config --global user.email "kpapst@gmx.net"
-git config --global github.user kevinpapst
+git config --global user.name "Luke Snape"
+git config --global user.email "***"
+git config --global github.user lsnape
 git config --global github.token your_token_here
 git config --global color.ui true
