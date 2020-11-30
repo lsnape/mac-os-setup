@@ -40,20 +40,20 @@ osascript -e 'tell application "System Preferences" to quit'
 chflags nohidden ~/Library
 
 # Store screenshots directly on desktop
-defaults write com.apple.screencapture location ~/Desktop
+# defaults write com.apple.screencapture location ~/Desktop
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "png"
+# defaults write com.apple.screencapture type -string "png"
 
 # Get rid of the unused dashboard
-defaults write com.apple.dashboard mcx-disabled -bool true
-defaults write com.apple.dock dashboard-in-overlay -bool true
+# defaults write com.apple.dashboard mcx-disabled -bool true
+# defaults write com.apple.dock dashboard-in-overlay -bool true
 
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
 
 # Finder: show hidden files by default
-#defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
