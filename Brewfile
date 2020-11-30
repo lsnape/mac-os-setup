@@ -7,56 +7,57 @@ brew "mas"
 # App-Store programs via "mas"                                       #
 ######################################################################
 
-mas "feedly", id: 865500966
-mas "Monosnap", id: 540348655
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "PDFify", id: 1435055351
-mas "Receiver Radio", id: 1445434819
 mas "Xcode", id: 497799835
 
 ######################################################################
 # Office                                                             #
 ######################################################################
 
-cask "libreoffice"
-cask "receipts"
+#cask "libreoffice"
+#cask "receipts"
 
 ######################################################################
 # The development, console and server stuff                          #
 ######################################################################
 
-#brew "git"
-#brew "git-extras"
+brew "git"
+brew "curl"
+brew "tree"
+brew "openssl"
+brew "wget"
 
-#brew "git-flow"
-#brew "curl"
-#brew "tree"
-#brew "openssl"
-#brew "wget"
-#brew "telnet"
+# LS: added
+brew "bat"
+brew "ripgrep"
+brew "rlwrap"
+brew "tldr"
+brew "jq"
+brew "fasd"
+brew "gh"
+brew "fd"
+brew "terraform"
 
 # ==== Databases and tools ====
-brew "mariadb", restart_service: true
-cask "db-browser-for-sqlite"
-cask "sequel-pro"
-brew "sqlite-analyzer"
+#brew "mariadb", restart_service: true
+#cask "db-browser-for-sqlite"
+#cask "sequel-pro"
+#brew "sqlite-analyzer"
 #brew "postgresql"
 
 #cask "virtualbox"
 #cask "vagrant"
 #cask "transmit"
-cask "postman"
+#cask "postman"
 
 # ==== Some version control tools you might like ====
 # cask "github-desktop"
 # cask "tower"
 # cask "sourcetree"
 
-# brew "docker"
-# brew "docker-compose"
-# brew "docker-machine"
-# cask "dockertoolbox"
+brew "docker"
+brew "docker-compose"
+brew "docker-machine"
+cask "dockertoolbox"
 
 # ==== VPN Connections ====
 # cask "tunnelbear"
@@ -85,7 +86,7 @@ cask "postman"
 
 # Mojave comes with PHP 7.3 bundled, which is excellent - so I will stick with that one
 
-brew "composer"
+# brew "composer"
 # brew "php-code-sniffer"
 # brew "php-cs-fixer"
 
@@ -93,9 +94,9 @@ brew "composer"
 # Licensed software                                                  #
 ######################################################################
 
-cask "phpstorm"
-cask "hyperdock"
-cask "moneymoney"
+#cask "phpstorm"
+#cask "hyperdock"
+#cask "moneymoney"
 
 #cask "gemini"
 #cask "cleanmymac"
@@ -123,7 +124,10 @@ cask "font-menlo-for-powerline"
 # (Text-)Editors                                                     #
 ######################################################################
 
-cask "atom"
+tap d12frosted/emacs-plus
+brew emacs-plus
+
+#cask "atom"
 
 #cask "sublime-text"            # license required
 
@@ -148,14 +152,14 @@ cask "atom"
 # cask "dropbox"
 # cask "google-backup-and-sync"
 
-cask "skype"
+#cask "skype"
 cask "slack"
 cask "vlc"
 
 # cask "cheatsheet"
 
 # cask "keepassx"               # I prefer MacPass due to its much nicer UI
-cask "macpass"
+# cask "macpass"
 
 # cask "google-hangouts"
 # cask "grandperspective"
