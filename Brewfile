@@ -37,6 +37,7 @@ brew "fasd"
 brew "gh"
 brew "fd"
 brew "terraform"
+brew "clojure/tools/clojure"
 
 # ==== Databases and tools ====
 #brew "mariadb", restart_service: true
