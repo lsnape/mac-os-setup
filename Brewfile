@@ -38,8 +38,7 @@ brew "gh"
 brew "fd"
 brew "terraform"
 brew "clojure/tools/clojure"
-brew "tree"
-cask adoptopenjdk8
+cask "adoptopenjdk8"
 
 # ==== Databases and tools ====
 #brew "mariadb", restart_service: true
@@ -128,8 +127,8 @@ cask "font-menlo-for-powerline"
 # (Text-)Editors                                                     #
 ######################################################################
 
-tap d12frosted/emacs-plus
-brew emacs-plus
+tap "d12frosted/emacs-plus"
+brew "emacs-plus"
 
 #cask "atom"
 
