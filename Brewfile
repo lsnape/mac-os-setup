@@ -38,6 +38,8 @@ brew "gh"
 brew "fd"
 brew "terraform"
 brew "clojure/tools/clojure"
+brew "tree"
+cask adoptopenjdk8
 
 # ==== Databases and tools ====
 #brew "mariadb", restart_service: true
