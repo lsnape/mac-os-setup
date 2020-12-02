@@ -7,7 +7,7 @@
 if [ ! -f ~/.ssh/id_rsa ]; then
     echo "Creating SSH key ..."
     # Copy this ssh key to github.com!
-    ssh-keygen -t rsa -C "***"
+    ssh-keygen -t rsa -C "ldjsnape@gmail.com"
 fi
 
 echo "Setting Git configs ..."

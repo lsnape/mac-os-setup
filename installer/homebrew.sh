@@ -17,10 +17,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # Make sure we’re using the latest Homebrew
 brew update
-brew upgrade --all
+brew upgrade
 
 # Install Brew cask for standalone software installations
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew install brew-cask
 brew tap caskroom/versions
 
