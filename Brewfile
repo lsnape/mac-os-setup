@@ -37,6 +37,7 @@ brew "fasd"
 brew "gh"
 brew "fd"
 brew "terraform"
+tap "clojure/tools"
 brew "clojure/tools/clojure"
 cask "adoptopenjdk8"
 
@@ -182,8 +183,8 @@ cask "vlc"
 # Drivers                                                            #
 ######################################################################
 
-tap "homebrew/cask-drivers"
-cask "canon-pixma-scanner-driver-ica"     # for my Canon MG5350 printer
+# tap "homebrew/cask-drivers"
+# cask "canon-pixma-scanner-driver-ica"     # for my Canon MG5350 printer
 
 ######################################################################
 # Browser                                                            #
